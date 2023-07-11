@@ -8,7 +8,7 @@ body {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 10px 15px 10px;
+  margin: 10px 10px 15px 10px;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@ h3 {
 
 p {
   line-height: 1.5em;
-  margin: 0;
+  margin: 10px 0px;
 }
 
 section {
@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -40,6 +40,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  gap:10px
 }
 
 .item {
@@ -55,7 +56,7 @@ main img {
 
 header {
   background-color: #83092e;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   text-align: center;
 }
 
@@ -79,8 +80,22 @@ header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
 }
+#menu {
+  display:flex;
+  flex-direction:row;
+
+}
+
 
 /* -------  Join Form ------- */
+#join{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+div img{
+  width:100%;
+}
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
@@ -104,6 +119,11 @@ form button {
   padding: 15px;
   width: 100%;
 }
+.form-input-box {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
 
 /* -------  Footer ------- */
 
@@ -115,6 +135,7 @@ footer p {
   color: #fff;
   text-align: center;
   padding: 20px;
+  margin:0px 10px;
 }
 
 /* -------  Media Query ------- */
