@@ -58,6 +58,8 @@ header {
   background-color: #83092e;
   padding: 20px 20px 20px 20px;
   text-align: center;
+  display:flex;
+  flex-direction:column;
 }
 
 .logo {
@@ -139,3 +141,44 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width:480px){
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+    display:flex;
+    align-items:center;
+  }
+  .logo {
+    font-size: 30px;
+    align-self:center;
+  }
+  #join {
+    flex-direction: row;
+  }
+  .img-column {
+    flex:2;
+  }
+  .form-column {
+    flex:1;
+    align-self:center;
+  }
+ 
+  .group {
+    flex-direction:row;
+  }
+  .text-with-img {
+    align-self:center;
+  }
+  .blog-mother-box {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+  }
+  .blog-son-box {
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+  }
+}
